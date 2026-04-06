@@ -1,25 +1,38 @@
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin: 0;
     background: #f4f4f4;
+    color: #333;
     text-align: center;
 }
 
+/* HEADER */
 header {
     background: #333;
     color: white;
     padding: 15px;
 }
 
+/* SECTIONS */
 section {
-    padding: 20px;
+    padding: 30px 20px;
 }
 
+/* IMAGES */
 img {
-    width: 150px;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
+/* PROFILE IMAGE */
+#home img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* CARDS */
 .card {
     background: white;
     padding: 15px;
@@ -27,10 +40,49 @@ img {
     display: inline-block;
     width: 250px;
     border-radius: 10px;
+    vertical-align: top;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Dark Mode */
-.dark {
-    background: black;
+/* CARD IMAGE */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* GALLERY */
+#gallery img {
+    width: 150px;
+    margin: 10px;
+}
+
+/* BUTTON */
+button {
+    padding: 8px 12px;
+    border: none;
+    background: #555;
     color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #777;
+}
+
+/* DARK MODE */
+.dark {
+    background: #121212;
+    color: white;
+}
+
+/* Dark mode cards */
+.dark .card {
+    background: #1e1e1e;
+    color: white;
+}
+
+/* Dark mode header */
+.dark header {
+    background: #000;
 }
