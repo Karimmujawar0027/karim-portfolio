@@ -1,74 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-    <h1>Your Name</h1>
-    <button onclick="toggleDarkMode()">🌙</button>
+    <h1>My Portfolio</h1>
+    <button onclick="darkMode()">🌙</button>
 </header>
 
-<!-- HOME -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
 <section id="home">
-    <img src="assets/profile.jpg" alt="Profile">
-    <h2>Hello, I'm Your Name</h2>
-    <p>I am a student interested in AI & Web Development.</p>
+    <img src="assets/profile.jpg">
+    <h2>Your Name</h2>
+    <p>I am a student passionate about technology.</p>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
     <h2>About Me</h2>
     <p>Education: Your College</p>
-    <p>Skills: HTML, CSS, JavaScript, Python</p>
-    <p>Goals: Become a Software Engineer</p>
+    <p>Skills: HTML, CSS, JavaScript</p>
+    <p>Goals: Become Software Developer</p>
 </section>
 
-<!-- ACHIEVEMENTS -->
 <section id="achievements">
     <h2>Achievements</h2>
 
     <div class="card">
-        <h3>AI4A Project</h3>
-        <p>AI-based learning project</p>
+        <img src="assets/ai4a.jpg">
+        <p>AI4A Project</p>
     </div>
 
     <div class="card">
-        <h3>Design Thinking</h3>
-        <p>Problem solving project</p>
+        <img src="assets/design.jpg">
+        <p>Design Thinking Project</p>
     </div>
 
     <div class="card">
-        <h3>Certificates</h3>
-        <img src="assets/certificates/cert1.jpg" alt="Certificate">
-        <p>Coursera, Netacad, Yuva AI</p>
+        <img src="assets/ace.jpg">
+        <p>ACE Project</p>
     </div>
 
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
     <h2>Projects</h2>
 
     <div class="card">
-        <img src="assets/projects/project1.png" alt="Project">
-        <h3>Deepfake Detector</h3>
-        <p>Built using Python, TensorFlow</p>
+        <img src="assets/project1.png">
+        <p>Deepfake Detector</p>
     </div>
 
 </section>
 
-<!-- GALLERY -->
-<section id="gallery">
-    <h2>Gallery</h2>
-    <img src="assets/gallery/img1.jpg" alt="Gallery Image">
-    <img src="assets/gallery/img2.jpg" alt="Gallery Image">
-</section>
-
-<!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
     <p>Email: your@email.com</p>
@@ -76,5 +70,6 @@
 </section>
 
 <script src="script.js"></script>
+
 </body>
 </html>
