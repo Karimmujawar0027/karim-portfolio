@@ -1,86 +1,36 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Header */
-header {
-    background: #0077b6;
-    color: white;
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
     text-align: center;
-    padding: 30px 0;
 }
 
-header h1 {
-    font-size: 2.5em;
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
 }
 
-header p {
-    font-size: 1.2em;
-}
-
-/* Sections */
 section {
     padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    background: white;
+}
+
+img {
+    width: 150px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-    margin-bottom: 10px;
-    color: #0077b6;
-}
-
-/* Lists */
-ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-li {
-    margin: 8px 0;
-}
-
-/* Contact Links */
-#contact p {
-    margin: 5px 0;
-}
-
-/* Footer */
-footer {
-    text-align: center;
+.card {
+    background: white;
     padding: 15px;
-    background: #023e8a;
+    margin: 10px;
+    display: inline-block;
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Dark Mode */
+.dark {
+    background: black;
     color: white;
-    margin-top: 20px;
-}
-
-/* Hover Effects */
-section:hover {
-    transform: scale(1.02);
-    transition: 0.3s;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    section {
-        width: 95%;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
 }
